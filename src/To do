@@ -1,0 +1,47 @@
+
+// Display results
+  // 1. DONE All the cellValues have the same cellValues
+  // 2. DONE orderedKeyTitle of getTableCells have a different case than row.value
+  // 3. DONE Replace getDerivedStateFromProps with memoization: https://reactjs.org/blog/2018/06/07/you-probably-dont-need-derived-state.html#what-about-memoization
+  // 4. DONE Make display by type and by dialog available
+  // 5. DONE Switching from BY_DIALOG to BY_TYPE does not happen properly
+  // 6. DONE Add labels to Radio
+  // 7. DONE Add a 1 sec Timeout after clicking on the snackbar / "start experiment"
+  // 8. DONE Show test dialog before others (tutorial).
+  // 9. DONE User creation
+  // 10. DONE Add snackbar to tutorial
+  //    a. DONE Add "Again" button text to unfortunately snackabr instead of "next"
+  //    b. fix the issue with not displaying bold text in the snackbar properly
+  // 11. Add switcher to display all results or results of a current user
+  // 12. DONE Saving user to DB.
+  // 13. DONE Save results to the database automatically.
+  // 14. "You made changes to the form" is being displayed as questionElaboration in the result, but it's ok in the state.
+  // 15. Form more categories ("by words" used "destroy, save etc") and display them in the results table.
+  // different colors in the table depending on type of row (text structure type, word)
+  // Add Radios "All results" / "My results" OR maybe display my results and all results in the same table for easier comaprison
+  // App should do the most of what PromptDialog does, which should be just a dialog component.
+  // Create a start function for arranging rows data, which would perform action based on tableFormat
+
+
+
+TO DO:
+// rename elements to components?
+// write functions that reset certain parts of state, i.e. when snackbar is being closed, instead of manually doing it using multiple lines
+// make a base case-conversion function of /utilities
+
+
+Database:
+
+users: {
+  userId: {
+    name: string
+  }
+}
+results: {
+  userId: {
+    ...dialogResults
+  },
+  userId2: {
+    ...dialogResults
+  }
+}
